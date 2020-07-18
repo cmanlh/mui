@@ -1,0 +1,8 @@
+<div>
+    <ul>
+        <li v-for="menu of menus" v-bind:key="menu.url" v-on:click="loadCmp(menu.url)">{{menu.title}}</li>
+    </ul>
+    <keep-alive>
+        <router-view></router-view>
+    </keep-alive>
+</div>
